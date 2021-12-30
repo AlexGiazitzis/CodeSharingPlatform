@@ -1,0 +1,79 @@
+body > #code_area {
+    background-color: #ffffff;
+    width: 60%;
+    padding: 1em 1em;
+    margin-bottom: auto;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #aaaaaa;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+body > #code_area > #load_date:before {
+    content: "Created on: ";
+}
+
+body > #code_area > #time_restriction:after {
+    content: " seconds remaining till deletion.";
+}
+
+body > #code_area > #views_restriction:after {
+    content: " more lookups allowed."
+}
+
+body > #code_area > time {
+    color: #a30410;
+    text-decoration: underline;
+}
+
+body > #code_area > pre {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body > #code_area > pre > code {
+    /*
+    auto => makes the text overflow from the container
+    inherit => gets the same value from parent, matched to parents width, eg. 60% inherit => 60% of container's width
+    n% => n% of container's width
+    */
+    width: auto;
+
+    font-size: 16px;
+
+    overflow-x: auto;
+    padding-bottom: 2%;
+
+    /* wraps text when it exceeds the container size => makes scrollbar unneeded*/
+    /*white-space: pre-wrap;*/
+}
+
+/* overriding hljs css */
+.hljs {
+    background: inherit;
+}
+
+pre code.hljs {
+    padding: unset;
+}
+
+@media only screen and (max-width: 600px) {
+    body > #code_area {
+        width: 90%;
+
+        /* needed for content to show properly when scrolling */
+        align-items: flex-start;
+
+        /* enables a horizontal scrolling bar */
+        overflow: auto;
+    }
+
+    body > #code_area > time {
+        /* overrides the align-items of the parent without breaking the scrolling (see note on align-items above) */
+        align-self: center;
+    }
+}

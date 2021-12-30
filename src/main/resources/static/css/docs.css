@@ -1,0 +1,72 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.container--single {
+    width: 33.3%;
+    margin-bottom: auto;
+    padding: 1em;
+    background-color: #FEFEFE;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px #808080;
+}
+
+.container--single:hover {
+    animation: shadow .5s forwards;
+}
+
+.endpoint {
+    font-size: 20px;
+    display: block;
+    background-color: #DEDEDE;
+    border: solid 1px #BEBEBE;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.example-container {
+    margin-top: 1rem;
+    font-size: 19px;
+}
+
+.example {
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 6px inset #EEEEEE;
+}
+
+/* overriding hljs css */
+.hljs {
+    background: inherit;
+}
+
+pre code.hljs {
+    padding: unset;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 3px 3px 10px 1px #808080;
+    }
+    25% {
+        box-shadow: 3px 3px 5px #808080;
+    }
+    50% {
+        box-shadow: 3px 5px 2px #808080;
+    }
+    75% {
+        box-shadow: 5px 5px #808080;
+    }
+    100% {
+        box-shadow: 5px 5px #00ADB5;
+    }
+}

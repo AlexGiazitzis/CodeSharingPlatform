@@ -1,0 +1,83 @@
+label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+body > #form {
+    width: 60%;
+    min-height: 40%;
+    height: auto;
+    margin-bottom: auto;
+}
+
+body > #form > form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body > #form > form > button {
+    width: auto;
+    height: 3em;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #5a5a5d;
+    color: white;
+    box-shadow: 3px 3px 2px #aaaaaa;
+
+    margin-top: 5%;
+    padding: 2em;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > #form > form > button:hover {
+    background-color: #00ADB5;
+}
+
+body > #form > form > #restrictions {
+    display: flex;
+}
+
+body > #form > form > #restrictions > div {
+    display: flex;
+    flex-direction: column;
+}
+
+body > #form > form > #restrictions > div > label {
+    margin: 1em 0 0 0;
+}
+
+body > #form > form > #restrictions > div > input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > #form > form > textarea, body > #form > form > #restrictions > div > input {
+    padding-top: 10px;
+    padding-left: 15px;
+
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    box-shadow: 5px 5px 5px #aaaaaa;
+
+    font-family: "Fira Code", monospace;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body > #form > form > #restrictions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+}
