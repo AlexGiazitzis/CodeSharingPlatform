@@ -68,10 +68,8 @@ p > a {
 
 }
 
-.primary--inverted {
-    background-color: #FFFFFF !important;
+.primary--color {
     color: #00ADB5 !important;
-    border: 1px solid #FFFFFF !important;
 }
 
 .button {
@@ -117,4 +115,9 @@ p > a {
 
 .is-full {
     width: 100%;
+}
+
+.hero_img {
+    width: 600px;
+    height: 300px;
 }

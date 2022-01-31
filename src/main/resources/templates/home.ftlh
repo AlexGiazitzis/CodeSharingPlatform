@@ -10,7 +10,7 @@
 
 <div class="container flex flex_row--reverse center">
     <div class="is-one-third">
-        <img src="/img/hero-img.jpg" alt="Hero"/>
+        <img src="/img/hero-img.jpg" alt="Hero" class="hero_img"/>
     </div>
     <div class="is-one-third">
         <h1>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="container flex flex_row column_gap is-two-thirds">
-    <i class="fas fa-cogs fa-3x primary--inverted"></i>
+    <i class="fas fa-cogs fa-3x primary--color"></i>
     <div class="text flex flex_column row_gap" style="width: 100%">
         <p>
             Fast, responsive and easy to use!
@@ -40,7 +40,7 @@
     </div>
 </div>
 <div class="container flex flex_row column_gap is-two-thirds">
-    <i class="fas fa-cogs fa-3x primary--inverted"></i>
+    <i class="fas fa-cogs fa-3x primary--color"></i>
     <div class="text flex flex_column row_gap" style="width: 100%">
         <p>
             Powered by modern technologies like <a href="https://spring.io/">Spring</a> and <a href="https://highlightjs.org/">highlight.js</a>!
@@ -49,7 +49,7 @@
     </div>
 </div>
 <div class="container flex flex_row column_gap is-two-thirds">
-    <i class="fas fa-cogs fa-3x primary--inverted"></i>
+    <i class="fas fa-cogs fa-3x primary--color"></i>
     <div class="text flex flex_column row_gap" style="width: 100%">
         <p>
             Privacy friendly. No account needed to use the service!
@@ -58,7 +58,7 @@
     </div>
 </div>
 <div class="container flex flex_row column_gap is-two-thirds">
-    <i class="fas fa-cogs fa-3x primary--inverted"></i>
+    <i class="fas fa-cogs fa-3x primary--color"></i>
     <div class="text flex flex_column row_gap" style="width: 100%">
         <p>
             Public and private posts, by utilizing the timer and view count!
